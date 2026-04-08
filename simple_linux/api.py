@@ -1,10 +1,10 @@
-from logic.services_manager import get_all_services, get_service_details
-from logic.man_parser import get_man_page
-from logic.translator import translate
-from logic.config import load_config, save_config
-from logic.system_info import get_system_info
-from logic.scheduled import get_all_scheduled
-from logic.logs import get_log_categories, get_logs
+from simple_linux.logic.services_manager import get_all_services, get_service_details
+from simple_linux.logic.man_parser import get_man_page
+from simple_linux.logic.translator import translate
+from simple_linux.logic.config import load_config, save_config
+from simple_linux.logic.system_info import get_system_info
+from simple_linux.logic.scheduled import get_all_scheduled
+from simple_linux.logic.logs import get_log_categories, get_logs
 import subprocess
 import os
 

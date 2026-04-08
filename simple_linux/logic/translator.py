@@ -1,7 +1,7 @@
 import urllib.request
 import urllib.parse
 import json
-from logic.config import load_config
+from simple_linux.logic.config import load_config
 
 
 def translate(text: str) -> dict:
