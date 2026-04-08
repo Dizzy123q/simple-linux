@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Linux</title>
+    <style>html, body { background-color: #0f0f0f; }</style>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="app-layout">
+
+        <!-- ─── SIDEBAR ─── -->
+        <div class="sidebar">
+            <div class="sidebar-title">Simple Linux</div>
+
+            <nav class="nav-top">
+                <div class="nav-item active" data-page="home">Home</div>
+                <div class="nav-item" data-page="services">Services</div>
+                <div class="nav-item" data-page="env">Environment</div>
+                <div class="nav-item" data-page="logs">Logs</div>
+                <div class="nav-item" data-page="scheduled">Scheduled</div>
+                <div class="nav-item" data-page="sysinfo">System Info</div>
+            </nav>
+
+            <div style="flex: 1;"></div>
+            <div class="sidebar-divider"></div>
+
+            <nav class="nav-bottom">
+                <div class="nav-item" data-page="settings">Settings</div>
+                <div class="nav-item" data-page="help">Help</div>
+            </nav>
+        </div>
+
+        <!-- ─── CONȚINUT ─── -->
+        <div class="app-content">
+
+            <div id="page-home" class="page active"></div>
+            <div id="page-services" class="page"></div>
+            <div id="page-env" class="page"></div>
+            <div id="page-logs" class="page">
+                <div class="coming-soon">
+                    <h2>Logs</h2>
+                    <p>În curând</p>
+                </div>
+            </div>
+            <div id="page-processes" class="page">
+                <div class="coming-soon">
+                    <h2>Processes</h2>
+                    <p>În curând</p>
+                </div>
+            </div>
+            <div id="page-scheduled" class="page">
+                <div class="coming-soon">
+                    <h2>Scheduled Tasks</h2>
+                    <p>În curând</p>
+                </div>
+            </div>
+            <div id="page-sysinfo" class="page">
+                <div class="coming-soon">
+                    <h2>System Info</h2>
+                    <p>În curând</p>
+                </div>
+            </div>
+            <div id="page-settings" class="page"></div>
+            <div id="page-help" class="page"></div>
+
+        </div>
+    </div>
+
+    <script src="/pages/home.js"></script>
+    <script src="/pages/services.js"></script>
+    <script src="/pages/env.js"></script>
+    <script src="/pages/settings.js"></script>
+    <script src="/pages/help.js"></script>
+    <script src="/pages/sysinfo.js"></script>
+    <script src="/app.js"></script>
+    <script src="/pages/scheduled.js"></script>
+    <script src="/pages/logs.js"></script>
+</body>
+</html>

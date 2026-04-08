@@ -11,7 +11,7 @@ setup(
         "PyQt6-WebEngine",
     ],
     entry_points={
-        "console_scripts": [
+        "gui_scripts": [
             "simple-linux=simple_linux.main:main"
         ]
     },

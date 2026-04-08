@@ -31,5 +31,16 @@ if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
     echo "==> Added ~/.local/bin to PATH"
 fi
 
+echo "==> Installing desktop entry and icon..."
+mkdir -p ~/.local/share/applications
+mkdir -p ~/.local/share/icons
+
+sed -i "s|Exec=simple-linux|Exec=$HOME/.local/bin/simple-linux|g" simple-linux.desktop
+
+cp simple-linux.desktop ~/.local/share/applications/
+cp simple-linux.svg ~/.local/share/icons/simple-linux.svg
+
+update-desktop-database ~/.local/share/applications/ 2>/dev/null || true
+
 echo ""
 echo "✓ Done! Run with: simple-linux"

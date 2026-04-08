@@ -1,2 +1,2 @@
-[console_scripts]
+[gui_scripts]
 simple-linux = simple_linux.main:main

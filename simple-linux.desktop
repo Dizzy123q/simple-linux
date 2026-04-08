@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Simple Linux
+Comment=Explore and understand your Linux system
+Exec=/home/dizzy/.local/bin/simple-linux
+Icon=simple-linux
+Terminal=false
+Type=Application
+Categories=System;Monitor;
+Keywords=linux;system;logs;services;

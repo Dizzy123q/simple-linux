@@ -1,11 +1,9 @@
 Metadata-Version: 2.4
 Name: simple-linux
 Version: 1.0.0
-Summary: A simple Linux service manager with a visual interface
-Author: tu
 Requires-Python: >=3.10
 Requires-Dist: pywebview>=4.4.1
-Dynamic: author
+Requires-Dist: PyQt6
+Requires-Dist: PyQt6-WebEngine
 Dynamic: requires-dist
 Dynamic: requires-python
-Dynamic: summary

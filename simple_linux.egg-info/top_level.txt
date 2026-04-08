@@ -1,1 +1,1 @@
-logic
+simple_linux
